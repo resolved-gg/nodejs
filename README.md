@@ -68,7 +68,7 @@ const token = res.data.token
 ```
 
 
-# Full code example
+# Full code example (then/catch)
 ```javascript
 const Resolved = require("./main");
 
@@ -90,4 +90,30 @@ resolved.createTask(
             token = vv.data.token;
         }).catch(e => console.log(e));
     }).catch(e => console.log(e));
+```
+
+# Full code example (async/await)
+```javascript
+const Resolved = require("./main");
+
+async main(){
+resolved = new Resolved(
+    COMPANY_API_KEY,
+    USER_API_KEY
+);
+
+await resolved.createTask(
+        SITE_KEY,
+        SITE_URL,
+        CAPTCHA_SERVICE,
+        CAPTCHA_TYPE,
+        SESSION_CLONE,
+        SMART_MOVEMENT,
+        PROXY)
+    
+const res = await resolved.getToken()
+const token = vv.data.token
+}
+
+main()
 ```
