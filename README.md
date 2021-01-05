@@ -72,11 +72,13 @@ const token = res.data.token
 ```javascript
 const Resolved = require("./main");
 
+// initialize resolved object
 resolved = new Resolved(
     COMPANY_API_KEY,
     USER_API_KEY
 );
 
+// create a task
 resolved.createTask(
         SITE_KEY,
         SITE_URL,
@@ -86,7 +88,9 @@ resolved.createTask(
         SMART_MOVEMENT,
         PROXY)
     .then((v) => {
+        // request token
         resolved.getToken().then((vv) => {
+            // store the solved token
             token = vv.data.token;
         }).catch(e => console.log(e));
     }).catch(e => console.log(e));
@@ -97,11 +101,13 @@ resolved.createTask(
 const Resolved = require("./main");
 
 async main(){
+// create a resolved object
 resolved = new Resolved(
     COMPANY_API_KEY,
     USER_API_KEY
 );
 
+// create a task
 await resolved.createTask(
         SITE_KEY,
         SITE_URL,
@@ -110,8 +116,9 @@ await resolved.createTask(
         SESSION_CLONE,
         SMART_MOVEMENT,
         PROXY)
-    
+ 
 const res = await resolved.getToken()
+// store the solved token
 const token = vv.data.token
 }
 
