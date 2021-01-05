@@ -1,4 +1,23 @@
 {
+  "name": "node-resolved",
+  "version": "0.0.1a",
+  "description": "Easily get hCaptcha and reCaptcha challenges solved using reSolved - the fastest and most advanced captcha solving service",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:resolved-gg/nodejs.git"
+  },
+  "keywords": [
+    "captcha-solving",
+    "recaptcha",
+    "hcaptcha",
+    "geetest",
+    "sneaker",
+    "bots"
+  ],
+  "author": "mechaadi",
+  "license": "MIT",
+  "homepage": "https://github.com/resolved-gg/nodejs",
   "dependencies": {
     "axios": "^0.21.1"
   }
