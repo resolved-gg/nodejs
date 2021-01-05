@@ -66,3 +66,28 @@ const task = await resolved.createTask(
 const res = await resolved.getToken()
 const token = res.data.token
 ```
+
+
+# Full code example
+```javascript
+const Resolved = require("./main");
+
+resolved = new Resolved(
+    COMPANY_API_KEY,
+    USER_API_KEY
+);
+
+resolved.createTask(
+        SITE_KEY,
+        SITE_URL,
+        CAPTCHA_SERVICE,
+        CAPTCHA_TYPE,
+        SESSION_CLONE,
+        SMART_MOVEMENT,
+        PROXY)
+    .then((v) => {
+        resolved.getToken().then((vv) => {
+            token = vv.data.token;
+        }).catch(e => console.log(e));
+    }).catch(e => console.log(e));
+```
