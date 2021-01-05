@@ -17,6 +17,7 @@ or
 npm i node-resolved
 ```
 
+
 ### Import the library
 ```javascript
 const Resolved = require('node-resolved')
@@ -26,6 +27,7 @@ or
 import resolved from 'node-resolved'
 ```
 
+
 ### Initialize an object
 ```javascript
 resolved = new Resolved(
@@ -33,6 +35,7 @@ resolved = new Resolved(
     USER_API_KEY
 );
 ```
+
 
 ### Create a task and get the solved captcha token
 ```javascript
