@@ -40,13 +40,13 @@ resolved = new Resolved(
 ### Create a task and get the solved captcha token
 ```javascript
 resolved.createTask(
-        "6LeWwRkUAAAAAOBsau7KpuC9AV-6J8mhw4AjC3Xz",
-        "https://www.supremenewyork.com/checkout",
-        "reCaptcha",
-        "v2Invis",
-        false,
-        false,
-        "")
+        SITE_KEY",              // string
+        SITE_URL,               // string
+        CAPTCHA_SERVICE",       // string - e.g., reCaptcha, hCaptcha etc
+        CAPTCHA_TYPE,           // string - e.g, v2Invis
+        SESSION_CLONE,          // boolean
+        SMART_MOVEMENT,         // boolean
+        PROXY)                  // string - e.g., ip:port:username:password
         .then((v) => {
         resolved.getToken().then((res) => {
             token = res.data.token;
@@ -57,13 +57,13 @@ resolved.createTask(
 ### using async/await syntax
 ```javascript
 const task = await resolved.createTask(
-        "6LeWwRkUAAAAAOBsau7KpuC9AV-6J8mhw4AjC3Xz",
-        "https://www.supremenewyork.com/checkout",
-        "reCaptcha",
-        "v2Invis",
-        false,
-        false,
-        "")
+        SITE_KEY",              // string
+        SITE_URL,               // string
+        CAPTCHA_SERVICE",       // string - e.g., reCaptcha, hCaptcha etc
+        CAPTCHA_TYPE,           // string - e.g, v2Invis
+        SESSION_CLONE,          // boolean
+        SMART_MOVEMENT,         // boolean
+        PROXY)                  // string - e.g., ip:port:username:password
    
 const res = await resolved.getToken()
 const token = res.data.token
