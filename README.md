@@ -1,10 +1,8 @@
 # reSolved nodeJS library
 
-reSolved (a product from dominus labs) is a captcha solving service which is able to solve reCaptcha, geetest, hCaptcha in fraction of seconds.
+reSolved is an upcoming captcha solving service, capable of solving reCaptcha, hCaptcha, GeeTest as fast as sub 5 seconds. reSolved is designed to handle heavy workloads, unlike other captcha solving services. 
 
-We are working everyday to make the experience better for everyone i.e., developers and end-users, reSolved is well designed to work in high load times - our infrastructure is made in such a way that it can handle high stress in drop times.
-
-This is a nodejs library which is made by the reSolved team to make the integration easy for all the bot developers out there.
+We strive to improve the reSolved experience every single day - which is why we are releasing libraries that make an already simple integration process completely seamless.
 
 
 # Getting Started
