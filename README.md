@@ -41,10 +41,10 @@ resolved.createTask(
         SITE_KEY",              // string
         SITE_URL,               // string
         CAPTCHA_SERVICE",       // string - e.g., reCaptcha, hCaptcha etc
-        CAPTCHA_TYPE,           // string - e.g, v2Invis
+        CAPTCHA_TYPE,           // string - e.g, v2Invis/v2
         SESSION_CLONE,          // boolean
         SMART_MOVEMENT,         // boolean
-        PROXY)                  // string - e.g., ip:port:username:password
+        PROXY)                  // string - e.g., http://ip:port:username:password
         .then((v) => {
         resolved.getToken().then((res) => {
             token = res.data.token;
@@ -58,10 +58,10 @@ const task = await resolved.createTask(
         SITE_KEY",              // string
         SITE_URL,               // string
         CAPTCHA_SERVICE",       // string - e.g., reCaptcha, hCaptcha etc
-        CAPTCHA_TYPE,           // string - e.g, v2Invis
+        CAPTCHA_TYPE,           // string - e.g, v2Invis/v2
         SESSION_CLONE,          // boolean
         SMART_MOVEMENT,         // boolean
-        PROXY)                  // string - e.g., ip:port:username:password
+        PROXY)                  // string - e.g., http://ip:port:username:password
    
 const res = await resolved.getToken()
 const token = res.data.token
