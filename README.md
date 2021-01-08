@@ -38,9 +38,9 @@ resolved = new Resolved(
 ### Create a task and get the solved captcha token
 ```javascript
 resolved.createTask(
-        SITE_KEY",              // string
+        SITE_KEY,               // string
         SITE_URL,               // string
-        CAPTCHA_SERVICE",       // string - e.g., reCaptcha, hCaptcha etc
+        CAPTCHA_SERVICE,        // string - e.g., reCaptcha, hCaptcha etc
         CAPTCHA_TYPE,           // string - e.g, v2Invis/v2
         SESSION_CLONE,          // boolean
         SMART_MOVEMENT,         // boolean
@@ -55,9 +55,9 @@ resolved.createTask(
 ### using async/await syntax
 ```javascript
 const task = await resolved.createTask(
-        SITE_KEY",              // string
+        SITE_KEY,               // string
         SITE_URL,               // string
-        CAPTCHA_SERVICE",       // string - e.g., reCaptcha, hCaptcha etc
+        CAPTCHA_SERVICE,        // string - e.g., reCaptcha, hCaptcha etc
         CAPTCHA_TYPE,           // string - e.g, v2Invis/v2
         SESSION_CLONE,          // boolean
         SMART_MOVEMENT,         // boolean
